@@ -1,0 +1,22 @@
+body{
+	background-color: #2f2b09;
+}
+header{
+    color: white;
+    text-align: center;
+    background-image: url(oip.jpg);
+    background-size: 650px;
+}
+article{
+    color: white;
+    text-align: center;
+    background-color: #2d2a0d;
+}
+div{
+	max-width: 400px;
+	margin: 3em auto;
+}
+footer{
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+body{
+	background-color: #5e5b46;
+}
+header{
+    color: white;
+    text-align: center;
+    background-image: url(oip.jpg);
+    background-size: 650px;
+}
+article{
+    color: white;
+    text-align: center;
+    background-color: #4e4d44;
+}
+div{
+	max-width: 400px;
+	margin: 3em auto;
+}
+footer{
+    color: white;
+    text-align: center;
+}
+.lihat{
+    color: #efefef;
+}
+.login {
+    padding: 1em;
+    margin: 2pxem auto;
+    width: 79em;
+    background: #fff;
+    border-radius: 3px;
+  }
+   
+  label {
+    font-size: 10pt;
+    color: #555;
+  }
+   
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
+    width: 95%;
+    background: #efefef;
+    border: 0;
+    font-size: 10pt;
+    margin: 6px 0px;
+  }
+   
+  .tombol {
+    background: #7f8fa6;
+    color: #fff;
+    border: 0;
+    padding: 5px 8px;
+  }

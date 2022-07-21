@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Portofolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+        
+        <!-- sidebar -->
+        <input type="checkbox" id="check">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- bagian header -->
+        <header>
+            <div class="container">
+                <h1><a href=""><b>ZAMZAM MIFTAHUL FAOZ</b></a></h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- menu mobile -->
+                <label for="check" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></label>
+            </div>
+        </header>
+
+        <!-- bagian banner -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner-left">
+                    <img src="mypct.jpeg">
+                    <h2>Hallo!!<br>
+                        Saya adalah seorang <span class="efek-ngetik"></span></h2>
+                    <p>Selamat datang di website portfolio saya!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- bagian about -->
+        <section id="about">
+            <div class="container">
+                <h3>About Me</h3>
+                <p>Perkenalkan nama saya Zamzam Miftahul faoz dari Kab. Tasikmalaya Jawa Barat. Sekarang saya berdomisili di Tamanan Kab. Bantul. </p>
+
+                <p>Saat ini saya menjalankan studi S1 di salahsatu Universitas di Yogyakarta yaitu Universitas Ahmad Dahlan. Saya merupakan mahasiswa dari angkatan 2021 dengan prodi Informatika. Ini merupakan Portofolio saya dengan beberapa skills dan pengalaman saya. </p>
+            </div>
+        </section>
+
+        <!-- bagian skills -->
+        <section id="skills">
+            <div class="container">
+                <h3>My Skills</h3>
+                <h4>HTML</h4>
+                <div class="bar">
+                    <span class="nilai html">30%</span>
+                </div>
+
+                <h4>CSS</h4>
+                <div class="bar">
+                    <span class="nilai css">25%</span>
+                </div>
+
+                <h4>Javascript</h4>
+                <div class="bar">
+                    <span class="nilai js">20%</span>
+                </div>
+
+                <h4>MS Exel</h4>
+                <div class="bar">
+                    <span class="nilai exel">20%</span>
+                </div>
+
+                <h4>Photoshop</h4>
+                <div class="bar">
+                    <span class="nilai ps">40%</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- bagian portfolio -->
+        <section id="portfolio">
+            <div class="container">
+                <h3>Portfolio</h3>
+                <div class="col-4">
+                    <a href="">
+                        <img src="htm.png">
+                        <span>Membuat HTML</span>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="">
+                        <img src="web.png">
+                        <span>Membuat Laman Web</span>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="">
+                        <img src="ps.png">
+                        <span>Photoshop</span>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <a href="">
+                        <img src="fr.png">
+                        <span>Membuat Form HTML</span>
+                    </a>
+                </div>
+        </section>
+
+        <!-- bagian contact -->
+        <section id="contact">
+            <div class="container">
+                <h3>Contact</h3>
+                <div class="col-3">
+                    <h4>Alamat</h4>
+                    <p>Batung Tapan, Tamanan, Kab. Bantul DI. Yogyakarta</p>
+                </div>
+
+                <div class="col-3">
+                    <h4>Email</h4>
+                    <p>zamzam2100018381@webmail.uad.ac.id</p>
+                </div>
+
+                <div class="col-3">
+                    <h4>Telp/Hp</h4>
+                    <p>+62 8123 4567 890</p>
+                </div>  
+            </div>
+        </section>
+
+        <div class="login" >
+            <form action="#" method="POST" onSubmit="validasi()">
+                <div>
+                    <label>Nama Lengkap:</label>
+                    <input type="text" name="nama" id="nama" />
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div>
+                    <label>Massage:</label>
+                    <textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send " class="tombol">
+                </div>
+            </form>
+        </div>
+
+        <script type="text/javascript">
+            function validasi() {
+                var nama = document.getElementById("nama").value;
+                var email = document.getElementById("email").value;
+                var alamat = document.getElementById("alamat").value;
+                if (nama != "" && email!="" && alamat !="") {
+                    alert('Terimakasih sudah Mengirim pesan')
+                    return true;
+                    
+                }else{
+                    alert('Anda harus mengisi data dengan lengkap !');
+                }
+            }
+        </script>
+
+<div class="critic" align="center"><strong><font size="6" face="Courier New, Courier, mono">saran </font></strong></div>
+<form name="form1" method="post" action="proses.php">
+    <table class="saran " width="58%" border="0" align="center">
+        <tr>
+            <td>Nama</td> 
+            <td><input name="nama" type="text" id="nama"></td>
+        </tr>
+
+        <tr>
+            <td>Alamat</td>
+            <td><input name="alamat" type="text" id="alamat"></td>
+        </tr>
+
+        <tr>
+            <td>E-Mail</td>
+            <td><input name="email" type="text" id="email"></td> </tr>
+        </tr>
+        <tr>
+            <td>Kritik</td>
+            <td><textarea name="komentar" id="komentar"></textarea></td> </textarea>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="Submit" value="Kirim"><input type="reset" name="Submit2" value="Batal">
+        </td>
+        </tr>
+    </table>
+</form>
+<div class="lihat" align="center"><strong><a href="lihat.php">::Lihat Kritik dan Saran::
+</a></strong></div>
+
+        <footer>
+            <div class="container">
+                <small>Copyright &copy; 2022 | Zamzam MF.</small>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
